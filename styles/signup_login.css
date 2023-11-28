@@ -1,0 +1,101 @@
+.box{
+    width: 40%;
+    height: 27.6875rem;
+    margin: 4.25rem 30% 20rem 30%;
+    fill: #E3EDF7;
+    filter: drop-shadow(4px 2px 16px rgba(136, 165, 191, 0.54)) drop-shadow(-4px -2px 16px #FFF);
+
+}
+
+.login_close {
+    float: none;
+    text-align: right;
+}
+.close_btn {
+    margin: 1rem 1.07rem 0 0 !important;
+    background: linear-gradient(69deg, #F8AC75 2.63%, #E6660A 132.25%) !important;
+    box-shadow: 4px 12px 32px 0px rgba(244, 102, 0, 0.42), -6px -6px 16px 0px rgba(255, 255, 255, 0.60) !important;
+}
+.fa-xmark {
+    font-size: 1.2rem;
+    color: #fff !important;
+    background-color: transparent;
+}
+
+.content {
+    display: block;
+    text-align: center;
+}
+
+.content span {
+    font-family: Gilroy-Bold;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3rem;
+    background-color: transparent;
+}
+
+.signup_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.97rem;
+    margin-top: 1.5rem;
+    width: 21.8125rem;
+    height: 3.125rem;
+    fill: #E3EDF7;
+    filter: drop-shadow(3.8824970722198486px 1.9412485361099243px 15.529988288879395px rgba(136, 165, 191, 0.54)) drop-shadow(-3.8824970722198486px -1.9412485361099243px 15.529988288879395px #FFF);
+}
+
+.signup_btn span {
+    font-family: Gilroy-Medium;
+    font-size: 1.1875rem;
+    line-height: 1.45594rem; /* 122.605% */
+    letter-spacing: 0.02306rem;
+}
+
+img.signup_icon {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    margin-right: 0.5rem;
+}
+
+.fa-envelope {
+    font-size: 1.7rem;
+    margin-right: 0.5rem;
+}
+
+.already_registered {
+    margin-top: 2.5rem;
+}
+.already_registered span {
+    font-family: Gilroy-Medium;
+    font-size: 1.09194rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.94125rem; /* 177.778% */
+    letter-spacing: 0.02181rem;
+}
+
+.already_registered span a {
+    color: #E6660A;
+}
+
+@media screen and (max-width: 992px) {
+
+.box {
+    width: 60%;
+    margin: 4.25rem 20% 20rem 20%;
+    
+}
+}
+
+@media screen and (max-width: 652px) {
+
+.box {
+    width: 96%;
+    margin: 4.25rem 2% 20rem 2%;
+}
+}

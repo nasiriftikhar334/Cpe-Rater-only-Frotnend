@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="examiner_profile.css">
+    <link type="text/css" rel="stylesheet" href="navbar.css">
+    <link type="text/css" rel="stylesheet" href="footer.css">
+    <!-- Font awesome cdn here -->
+    <script src="https://kit.fontawesome.com/017223e88e.js" crossorigin="anonymous"></script>
+    <title>CPE RATER</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html"><img class="logo" src="icons/logo.png" alt="" /></a>
+        <div class="search_box">
+            <input class="search_field" type="text" placeholder="Search..." />
+            <img class="search_icon" src="icons/search icon.svg" alt="" />
+        </div>
+        <div style="display: flex;">
+            <button id="search_modal_btn" class="sm_search">
+                <img class="sm_search_icon" src="icons/search icon.svg" alt="" />
+            </button>
+            <button class="add_review" onclick="location.href='new_review.html'">
+                <img class="review_icon" src="icons/add_review_icon.svg" alt="" />
+                <span>New Review</span>
+            </button>
+            <button class="login_button" onclick="location.href='signup_login.html'">
+                <img class="login_icon" src="icons/login_icon.png" alt="" />
+                <span>Login or Sign up</span>
+            </button>
+        </div>
+        <div id="search_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_search_box">
+                    <input class="search_field" type="text" placeholder="Search..." />
+                    <img class="search_icon" src="icons/search icon.svg" alt="" />
+                </div>
+            </div>  
+          </div>
+        
+    </nav>
+    
+    <!-- Texas C&P -->
+    <div class="cnp_area">
+        <div class="cnp_head">
+            <button class="back_btn">
+                <img src="icons/back_icon.svg" alt="" />
+            </button>
+            <div class="cnp_title">
+                <span>Examiner Profile</span>
+            </div>
+        </div>
+        <div class="cnps">
+            <div class="cnp_item">
+                <div class="cnp_detail">
+                    <div class="profile_pic"><img src="profile_pic.png" alt="" /></div>
+                    <div>
+                        <div><b>Romman, Danny</b></div>
+                        <div>12221 N MoPac 
+                            ExpyAustin, TX 78758</div>
+                        <div><b>Main number:</b> 512-901-4013</div>
+                    </div>
+                </div>
+                <div class="cnp_comments">
+                    <img class="cnp_flag_icon" src="icons/flag_icon.svg" alt="" />
+                    <div><a href="#" onclick="toggle_comments()"><u><b>Comments</b></u></a></div>
+                </div>
+                <div class="cnp_rating">
+                    <div>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <button class="add_review" onclick="location.href='new_review.html'">
+                        <img class="review_icon" src="icons/add_review_icon.svg" alt="" />
+                        <span>New Review</span>
+                    </button>
+                </div>
+            </div>
+            <div class="cmnt_review_btn">
+                <button class="active">(16) Comments</button>
+                <button onclick="location.href='examiner_profile_reviews.html'">Reviews</button>
+            </div>
+            <div id="comments" class="comments">
+                <div class="cnp_item">
+                    <div class="pic_cmnt">
+                        <img class="pic" src="pic.png" alt="" />
+                        <div class="comment_input"><textarea>Add a comment...</textarea></div>
+                    </div>
+                    <button class="send_btn" type="button">Send</button>
+                </div>
+                <div class="cnp_item">
+                    <div class="user">
+                        <!-- <div> -->
+                            <img class="pic" src="pic.png" alt="" />
+                            <span>Romman, Danny</span>
+                        <!-- </div> -->
+                        <div class="comments_rating">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue urna nec velit fermentum, non consequat risus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+                    </div>
+                    <div class="reply_btn">
+                        <span><a href="#" onclick="">Like</a> | </span>
+                        <span><a href="#" onclick="">Reply</a> | </span>
+                        <span>23h</span>
+                    </div>
+                </div>
+                <div class="cnp_item">
+                    <div class="user">
+                        <!-- <div> -->
+                            <img class="pic" src="pic.png" alt="" />
+                            <span>Romman, Danny</span>
+                        <!-- </div> -->
+                        <div class="comments_rating">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue urna nec velit fermentum, non consequat risus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+                    </div>
+                    <div class="reply_btn">
+                        <span><a href="#" onclick="">Like</a> | </span>
+                        <span><a href="#" onclick="">Reply</a> | </span>
+                        <span>23h</span>
+                    </div>
+                </div>
+                <div class="cnp_item reply">
+                    <div class="user">
+                        <!-- <div> -->
+                            <img class="pic" src="pic.png" alt="" />
+                            <span>Romman, Danny</span>
+                        <!-- </div> -->
+                        <div class="comments_rating">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue urna nec velit fermentum, non consequat risus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+                    </div>
+                    <div class="reply_btn">
+                        <span><a href="#" onclick="">Like</a> | </span>
+                        <span><a href="#" onclick="">Reply</a> | </span>
+                        <span>23h</span>
+                    </div>
+                </div>
+                <div class="cnp_item">
+                    <div class="user">
+                        <!-- <div> -->
+                            <img class="pic" src="pic.png" alt="" />
+                            <span>Romman, Danny</span>
+                        <!-- </div> -->
+                        <div class="comments_rating">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue urna nec velit fermentum, non consequat risus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+                    </div>
+                    <div class="reply_btn">
+                        <span><a href="#" onclick="">Like</a> | </span>
+                        <span><a href="#" onclick="">Reply</a> | </span>
+                        <span>23h</span>
+                    </div>
+                </div>
+                <div class="cnp_item reply">
+                    <div class="user">
+                        <!-- <div> -->
+                            <img class="pic" src="pic.png" alt="" />
+                            <span>Romman, Danny</span>
+                        <!-- </div> -->
+                        <div class="comments_rating">
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue urna nec velit fermentum, non consequat risus tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</span>
+                    </div>
+                    <div class="reply_btn">
+                        <span><a href="#" onclick="">Like</a> | </span>
+                        <span><a href="#" onclick="">Reply</a> | </span>
+                        <span>23h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="more_btn" type="button">
+            <img src="icons/more_icon.svg" />
+        </button>
+    </div>
+    <img class="foot_mark" src="icons/foot_mark.svg" />
+
+    <!-- Footer -->
+    <div class="footer_area">
+        <div class="copyrigt">© 2023 CPE ♥ RATER. All rights reserved.</div>
+        <div class="social_footer">
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-facebook" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-instagram" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-twitter" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-youtube" style="color: #31456A;" ></i>
+            </button>
+        </div>
+    </div>
+
+<!-- Scripts -->
+
+<script>
+    var modal = document.getElementById("search_modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("search_modal_btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+</body>
+</html>

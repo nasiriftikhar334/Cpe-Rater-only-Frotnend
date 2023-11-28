@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="my_profile.css">
+    <link type="text/css" rel="stylesheet" href="navbar_loggedin.css">
+    <link type="text/css" rel="stylesheet" href="footer.css">
+    <!-- Font awesome cdn here -->
+    <script src="https://kit.fontawesome.com/017223e88e.js" crossorigin="anonymous"></script>
+    <title>CPE RATER</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html"><img class="logo" src="icons/logo.png" alt="" /></a>
+        <div style="display: flex;">
+            <div class="search_box">
+                <input class="search_field" type="text" placeholder="Search..." />
+                <img class="search_icon" src="icons/search icon.svg" alt="" />
+            </div>
+            <button id="search_modal_btn" class="sm_search">
+                <img class="sm_search_icon" src="icons/search icon.svg" alt="" />
+            </button>
+            <div class="notification">
+                <img class="notify_icon" src="icons/bell_icon.svg" alt="" />
+            </div>
+        </div>
+        <div id="search_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_search_box">
+                    <input class="search_field" type="text" placeholder="Search..." />
+                    <img class="search_icon" src="icons/search icon.svg" alt="" />
+                </div>
+            </div>  
+          </div>
+        <div class="nav_right">
+            <span>Romman, Danny</span>
+            <img src="profile_pic.png" alt="" />
+            <div class="drop_option">
+                <img class="drop_option_icon" src="icons/drop_option_icon.svg" alt="" />
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Login -->
+    <div class="box">
+        <div class="content">
+            <div class="title"><span>My Profile</span></div>
+            <div class="data">
+                <div class="pic_box">
+                    <div>
+                        <img src="profile_pic.png" alt="" />
+                    </div>
+                    <button class="upload_btn" type="button">
+                        <span>Upload</span>
+                    </button>
+                </div>
+                <div class="form">
+                    <form action="." method="post">
+                        <div class="input_creds">
+                            <input id="email" type="email" placeholder="E-mail" />
+                        </div>
+                        <div class="input_creds">
+                            <input type="password" placeholder="Primary password" />
+                        </div>
+                        <div class="input_creds">
+                            <input type="password" placeholder="New password" />
+                        </div>
+                        <div class="input_creds">
+                            <input type="password" placeholder="Re-enter password" />
+                        </div>
+                        <button class="save_btn" type="submit">
+                            <span>Save</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social_networks">
+                <span class="networks">Sign in via social networks</span>
+                <button class="account_add_btn" onclick="location.href='#'">
+                    <img class="account_add" src="icons/google_login.svg" alt="" />
+                    <span>Google</span>
+                    <span class="add" style="margin-left: 45%;">Add</span>
+                </button>
+                <button class="account_add_btn" onclick="location.href='#'">
+                    <img class="account_add" src="icons/facebook_login.svg" alt="" />
+                    <span>Facebook</span>
+                    <span class="add">Add</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foot Mark -->
+    <img class="foot_mark" src="icons/foot_mark.svg" />
+
+    <!-- Footer -->
+    <div class="footer_area">
+        <div class="copyrigt">© 2023 CPE ♥ RATER. All rights reserved.</div>
+        <div class="social_footer">
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-facebook" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-instagram" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-twitter" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-youtube" style="color: #31456A;" ></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script>
+        function show_password() {
+            var x = document.getElementById("password");
+
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        var modal = document.getElementById("search_modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("search_modal_btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+
+    </script>
+</body>
+</html>

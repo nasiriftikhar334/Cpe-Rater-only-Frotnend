@@ -1,0 +1,89 @@
+.box{
+    width: 50%;
+    height: 29.5625rem;
+    margin: 4.25rem 25% 20rem 25%;
+}
+
+.content {
+    display: block;
+    text-align: center;
+}
+
+.content span {
+    font-family: Gilroy-Bold;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem;
+    background-color: transparent;
+}
+
+.content a {
+    font-family: Gilroy-Bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.welcome {
+    margin-bottom: 2.5rem;
+}
+.thank_note {
+    margin-bottom: 2rem;
+}
+.thank_note span {
+    font-family: Gilroy-Medium;
+    font-size: 1.125rem;
+    line-height: 2rem; /* 177.778% */
+    letter-spacing: 0.02181rem;
+}
+
+.home_btn {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 11.58681rem;
+    height: 3.1545rem;
+    border: none;
+    fill: #E3EDF7;
+    filter: drop-shadow(3.8824970722198486px 1.9412485361099243px 15.529988288879395px rgba(136, 165, 191, 0.54)) drop-shadow(-3.8824970722198486px -1.9412485361099243px 15.529988288879395px #FFF);
+    justify-content: center;
+}
+
+.home_btn span {
+    font-family: Gilroy-Medium;
+    font-size: 1.09194rem;
+    line-height: 1.94125rem; /* 177.778% */
+    letter-spacing: 0.02181rem;
+}
+
+@media screen and (max-width: 992px) {
+
+.box {
+    width: 70%;
+    margin: 4.25rem 15% 20rem 15%;
+    
+}
+}
+
+@media screen and (max-width: 652px) {
+
+.box {
+    width: 96%;
+    margin: 4.25rem 2% 20rem 2%;
+}
+
+.content span {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.thank_note span {
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+.home_btn span {
+    font-size: 1.09194rem;
+    line-height: 1.94125rem;
+}
+}

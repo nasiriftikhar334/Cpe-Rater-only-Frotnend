@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="new_review.css">
+    <link type="text/css" rel="stylesheet" href="navbar.css">
+    <link type="text/css" rel="stylesheet" href="footer.css">
+    <!-- Font awesome cdn here -->
+    <script src="https://kit.fontawesome.com/017223e88e.js" crossorigin="anonymous"></script>
+    <title>CPE RATER</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html"><img class="logo" src="icons/logo.png" alt="" /></a>
+        <div class="search_box">
+            <input class="search_field" type="text" placeholder="Search..." />
+            <img class="search_icon" src="icons/search icon.svg" alt="" />
+        </div>
+        <div style="display: flex;">
+            <button id="search_modal_btn" class="sm_search">
+                <img class="sm_search_icon" src="icons/search icon.svg" alt="" />
+            </button>
+            <button class="add_review" onclick="location.href='new_review.html'">
+                <img class="review_icon" src="icons/add_review_icon.svg" alt="" />
+                <span>New Review</span>
+            </button>
+            <button class="login_button" onclick="location.href='signup_login.html'">
+                <img class="login_icon" src="icons/login_icon.png" alt="" />
+                <span>Login or Sign up</span>
+            </button>
+        </div>
+        <div id="search_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_search_box">
+                    <input class="search_field" type="text" placeholder="Search..." />
+                    <img class="search_icon" src="icons/search icon.svg" alt="" />
+                </div>
+            </div>  
+          </div>
+        
+    </nav>
+    
+    <!-- Login -->
+    <div class="box">
+        <div class="content">
+            <div class="title"><span>New Review</span></div>
+            <form action="." method="post">
+                <div class="label"><span>Search Examiners</span></div>
+                <div class="input_creds">
+                    <input type="text" placeholder="Dr. Phill" />
+                </div>
+                <div class="title" style="padding-top: 0; margin-bottom: 0;"><span>Or</span></div>
+                <div class="label"><span>Enter New Examiner</span></div>
+                <div class="input_creds half_width left_half">
+                    <input name="f_name" type="text" placeholder="F.name" />
+                </div>
+                <div class="input_creds half_width">
+                    <input name="l_name" type="text" placeholder="L.name" />
+                </div>
+                <div class="input_creds">
+                    <input type="text" placeholder="Address" />
+                </div>
+                <div class="input_creds half_width left_half">
+                    <input type="text" placeholder="City" />
+                </div>
+                <div class="input_creds half_width">
+                    <input type="text" placeholder="State" />
+                </div>
+                <div class="input_creds">
+                    <input type="text" placeholder="Phone Number" />
+                </div>
+                <div class="label" style="margin-top: 1rem;"><span>Contractor</span></div>
+                <div class="state_sel">
+                    <label>
+                        <input type="radio" name="state" id="qtc" value="QTC"/>
+                        <span>QTC</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="state" id="lhi" value="LHI" />
+                        <span>LHI</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="state" id="ves" value="VES" />
+                        <span>VES</span>
+                    </label>
+                </div>
+                <div class="input_creds review">
+                    <textarea type="text" placeholder="Review" ></textarea>
+                </div>
+                <div class="label rating_label"><span>Rating (1 star being the lowest)</span></div>
+                <div class="rating">
+                    <div>
+                        <i class="fa fa-star checked"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <button class="cancel_btn" type="button">
+                        <span>Cancel</span>
+                    </button>
+                    <button class="submit_btn" type="submit">
+                        <span>Submit</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Foot Mark -->
+    <img class="foot_mark" src="icons/foot_mark.svg" />
+
+    <!-- Footer -->
+    <div class="footer_area">
+        <div class="copyrigt">© 2023 CPE ♥ RATER. All rights reserved.</div>
+        <div class="social_footer">
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-facebook" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-instagram" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-twitter" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-youtube" style="color: #31456A;" ></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script>
+        function show_password() {
+            var x = document.getElementById("password");
+
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        var modal = document.getElementById("search_modal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("search_modal_btn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Quality Area */
+
+.quality_area {
+    display: flex;
+    margin: 5.2rem 6% 0 8%;
+}
+
+.text_area {
+    width: 27.875rem;
+    height: auto;
+    color: #31456A;
+    font-family: Gilroy-Bold;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.8rem;
+}
+
+.qa_desc {
+    font-family: Gilroy-Medium;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    opacity: 0.7;
+    word-wrap: break-word;
+    margin-top: 1.19rem;
+    margin-bottom: 3rem;
+}
+
+.map_area {
+    width: 41.3125rem;
+    height: 29.5905rem;
+}
+
+.qa_btn {
+    width: 8.375rem;
+    height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 16px 10px 48px 0px rgba(136, 165, 191, 0.58), -16px -2px 56px 0px #FFF;
+    font-family: Gilroy-Bold;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem
+}
+
+.qa_btn:focus {
+    color: #EE8C46;
+    box-shadow: 3px 3px 7px 0px rgba(136, 165, 191, 0.48) inset, -3px -3px 7px 0px #FFF inset;
+}
+
+/* More button */
+
+.more_btn {
+    margin-left: 45%;
+    width: 7.625rem;
+    height: 3.64181rem;
+    border-radius: 0rem 0rem 0.87231rem 0.87231rem;
+    border: 0.91px solid #FFF;
+    background: linear-gradient(69deg, #F8AC75 2.63%, #E6660A 132.25%);
+    box-shadow: 3.64179px 10.92537px 29.13433px 0px rgba(244, 102, 0, 0.42), -5.46269px -5.46269px 14.56716px 0px rgba(255, 255, 255, 0.60);
+}
+
+.more_btn img {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Quality Area */
+
+.quality_area {
+    flex-direction: column-reverse;
+}
+
+.text_area {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.8rem;
+}
+
+.qa_desc {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+}
+
+.map_area {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: auto;
+}
+
+.map_area img {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 782px) {
+
+.more_btn {
+    margin-left: 40%;
+}
+}
+
+@media screen and (max-width: 662px) {
+
+.text_area {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.8rem;
+}
+
+.map_area {
+    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.qa_btn {
+    width: 6.375rem;
+    height: 3rem;
+}
+
+.more_btn {
+    margin-left: 35%;
+    width: 30%;
+}
+
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="signup_login.css">
+    <link type="text/css" rel="stylesheet" href="navbar.css">
+    <link type="text/css" rel="stylesheet" href="footer.css">
+    <!-- Font awesome cdn here -->
+    <script src="https://kit.fontawesome.com/017223e88e.js" crossorigin="anonymous"></script>
+    <title>CPE RATER</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="home.html"><img class="logo" src="icons/logo.png" alt="" /></a>
+        <div class="search_box">
+            <input class="search_field" type="text" placeholder="Search..." />
+            <img class="search_icon" src="icons/search icon.svg" alt="" />
+        </div>
+        <div style="display: flex;">
+            <button id="search_modal_btn" class="sm_search">
+                <img class="sm_search_icon" src="icons/search icon.svg" alt="" />
+            </button>
+            <button class="add_review" onclick="location.href='new_review.html'">
+                <img class="review_icon" src="icons/add_review_icon.svg" alt="" />
+                <span>New Review</span>
+            </button>
+            <button class="login_button" onclick="location.href='signup_login.html'">
+                <img class="login_icon" src="icons/login_icon.png" alt="" />
+                <span>Login or Sign up</span>
+            </button>
+        </div>
+        <div id="search_modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal_search_box">
+                    <input class="search_field" type="text" placeholder="Search..." />
+                    <img class="search_icon" src="icons/search icon.svg" alt="" />
+                </div>
+            </div>  
+          </div>
+        
+    </nav>
+    
+    <!-- Signup Login -->
+    <div class="box">
+        <div class="login_close"><button class="social_btns close_btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button></div>
+        <div class="content">
+            <span>Login or Sign up</span>
+            <button class="signup_btn" onclick="location.href='#'">
+                <img class="signup_icon" src="icons/google_login.svg" alt="" />
+                <span>Or Continue with Google</span>
+            </button>
+            <button class="signup_btn" onclick="location.href='#'">
+                <img class="signup_icon" src="icons/facebook_login.svg" alt="" />
+                <span>Or Continue with Facebook</span>
+            </button>
+            <button class="signup_btn" onclick="location.href='signup.html'">
+                <i class="fa-solid fa-envelope signup_icon"></i>
+                <span>Or Continue with email</span>
+            </button>
+            <div class="already_registered">
+                <span>If you already have an account? <a href="login.html">Login</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foot Mark -->
+    <img class="foot_mark" src="icons/foot_mark.svg" />
+
+    <!-- Footer -->
+    <div class="footer_area">
+        <div class="copyrigt">© 2023 CPE ♥ RATER. All rights reserved.</div>
+        <div class="social_footer">
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-facebook" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-instagram" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-twitter" style="color: #31456A;" ></i>
+            </button>
+            <button class="social_btns" onclick="location.href='#'">
+                <i class="fa-brands fa-youtube" style="color: #31456A;" ></i>
+            </button>
+        </div>
+    </div>
+
+<!-- Scripts -->
+
+<script>
+    var modal = document.getElementById("search_modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("search_modal_btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+
+</body>
+</html>
